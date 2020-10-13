@@ -18,6 +18,10 @@
   display: table;
   clear: both;
 }
+
+.float-left {
+  float: left;
+}
 /* /utility */
 
 body {
@@ -26,8 +30,7 @@ body {
 }
 
 body > #container {
-  width: 75%;
-    border: 2px solid #000;
+  width: 75vw;
   margin: 20px auto 0;
 }
 
@@ -83,7 +86,7 @@ header > #navbar {
   list-style-type: none;
   display: inline-block;
   padding: 0 10px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   cursor: pointer;
   color: #fff;
@@ -94,6 +97,48 @@ header > #navbar {
 }
 /* /navbar */
 
+/* main */
 main {
   margin: 20px 0;
 }
+
+#box-left,
+#box-center,
+#box-right {
+  background: #fff;
+  border-radius: 10px;
+}
+
+#box-left {
+  width: 28%;
+  background: #00f;
+  height: 300px;
+}
+
+#box-center {
+  width: 48%;
+  height: 600px;
+  margin: 0 1%;
+  background: #f00;
+}
+
+#box-right {
+  width: 22%;
+  background: #fff;
+}
+#box-right .widget {
+  height: 400px;
+  margin-bottom: 15px;
+  background: #ff0;
+  border-radius: 10px;
+}
+/* /main */
+
+
+/* credits */
+footer > #credits {
+  height: 150px;
+  border-radius: 10px;
+  background: #0f0;
+}
+/* /credits */
